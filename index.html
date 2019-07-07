@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScrapPay</title>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower" rel="stylesheet">
+
+	<style type="text/css">
+		@font-face{
+			font-family: 'Anders';
+			src: url('fonts/Anders.ttf');
+		}
+		@font-face{
+			font-family: 'Track';
+			src: url('fonts/Track.ttf');
+		}
+		@font-face{
+			font-family: 'Arciform';
+			src: url('fonts/Arciform.otf');
+		}
+		body{
+			background-color: #4caf50;
+			/*background: #11998e;
+			background: -moz-linear-gradient(top, #11998e 0%, #38ef7d 100%);
+			background: -webkit-linear-gradient(top, #11998e 0%,#38ef7d 100%);
+			background: linear-gradient(to bottom, #11998e 0%,#38ef7d 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11998e', endColorstr='#38ef7d',GradientType=0 );
+
+			*/
+			background-size: contain;
+			min-height: 100vh;
+		}
+		.logo{
+			font-family:'Arciform';
+			margin-bottom: 5px;
+		}
+		.tag-line{
+			margin-bottom: 20px;
+		}
+		.valign-wrapper{
+			min-height: 100vh;
+		}
+		.search-box{
+			background-color: #fff;
+			border: none;
+			border-radius: 3px;
+			font-size: 1.3rem;
+			/*padding:5px 10px;*/
+			color: #424242;
+		}
+		.search-icon,.submit-icon{
+		    height: 3rem;
+		    line-height: 2.2rem;
+		    float: left;
+		    font-size: 1.3rem;
+			padding: 5px 10px;
+		    
+		}
+		.submit-icon{
+			float: right;
+			cursor: pointer;
+		}
+		.logo-text{
+			/*font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/
+			/*font-family: Futura,Trebuchet MS,Arial,sans-serif; */
+			font-family: 'Anton', sans-serif;
+		}
+		.logo-half-text{
+			font-family: 'Baumans', cursive;
+			/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Anton', sans-serif;*/
+		}
+
+		#search-field,#search-field:focus{
+			border:none;
+			border-bottom: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		#search-field{
+			width: calc(100% - 80px);
+			margin-bottom: 0;
+		}
+		.seamless-icons{
+			background: url('img/seamless-icons.png');
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			height: 30vh;
+		}
+	</style>
+	</head>
+	<body >
+		<div class="valign-wrapper">
+			<div class="container">
+				<div class="row">
+					<h3 class="col s12 logo white-text center-align">scrappay</h3>
+					<big class="col s12 white-text center-align tag-line">Recycle. Dispose. Earn.</big>
+					<!-- <h3 class="col s12 logo-text white-text center-align">Scrap<span class="logo-half-text">Pay</span></h3> -->
+
+					<div class="col s12">
+						<div class="search-box">
+							<i class="material-icons search-icon">search</i>
+							<input list="suggestions" type="text" id="search-field" placeholder="Search for scrap..">
+							<i class="material-icons submit-icon waves-effect" style="display: none;">arrow_forward</i>
+							<datalist style="color:red" id="suggestions">
+								<option value="Tea bags">
+								<option value="Left-over food">
+								<option value="Vegetables">
+								<option value="Fruit">
+								<option value="Fruit skins">
+								<option value="Apple">
+								<option value="Orange">
+								<option value="Mango">
+								<option value="Grape">
+								<option value="Peaches">
+								<option value="Strawberry">
+								<option value="Banana">
+								<option value="Chikoo">
+								<option value="Guava">
+								<option value="Berries">
+								<option value="Kiwi">
+								<option value="Watermelon">
+								<option value="Melons">
+								<option value="Coconut">
+								<option value="Papaya">
+								<option value="Pineapple">
+								<option value="Vegetables">
+								<option value="Capcicum">
+								<option value="Potato">
+								<option value="Tomato">
+								<option value="Cucumber">
+								<option value="Cabbage">
+								<option value="Brinjal">
+								<option value="Beans">
+								<option value="Broccoli">
+								<option value="Lady finger">
+								<option value="Rotten Eggs">
+								<option value="Egg Shells">
+								<option value="Used Flowers">						
+								<option value="Plastic">
+								<option value="Plastic">
+								<option value="Plastic Chair">
+								<option value="Plastic Table">
+								<option value="Plastic Dustbin">
+								<option value="Plastic Tiffin">
+								<option value="Plastic Box">
+								<option value="Rubber Bands">
+								<option value="Plastic Bowls">
+								<option value="Plastic Trays">
+								<option value="Leaves">
+								<option value="Newspapers">
+								<option value="Photo papers">
+								<option value="Tissue Paper">	
+								<option value="Paper">
+								<option value="Cards">
+								<option value="Books">
+								<option value="Cardboard">
+								<option value="Tetrapaks">
+								<option value="Metal">
+								<option value="Screws">
+								<option value="Pins">
+								<option value="Nails">
+								<option value="Tin boxes">
+								<option value="Cans">
+								<option value="Spoons">
+								<option value="Forks">
+								<option value="knife">
+								<option value="Utensils">
+								<option value="Glass">
+								<option value="Mirror">
+								<option value="Flower Pots">
+								<option value="Glass Utensils">
+								<option value="Vases">
+							</datalist>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="seamless-icons"></div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+		<script type="text/javascript">
+			$('#search-field').on('keyup',function(e){
+				if($(this).val().length == 0){
+					$('.submit-icon').fadeOut(250);
+					return;
+				}
+				if($(this).val().length - 1 == 0){
+					$('.submit-icon').fadeIn(250);
+				}
+				if(e.keyCode == 13){
+					$('.submit-icon').trigger('click');
+				}
+			});
+
+			$('.submit-icon').click(function(){
+				window.location.href = '/scrappay/list.php?q='+$('#search-field').val();
+			});
+		</script>
+	</body>
+</html>
